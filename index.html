@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Taxi Puerto in Puerto Rico </title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    data = {
+        banner: {
+            typeOfService: "Travel securely with us",
+            serviceInfo: "The trusted taxi of Puerto Rico",
+            img: "img/tax.png",
+        },
+        services: {
+            card1: {
+                img: "https://cdn-icons-png.flaticon.com/512/6424/6424622.png",
+                title: "Airport Pickup",
+            },
+            card2: {
+                img: "https://cdn-icons-png.flaticon.com/512/2906/2906651.png",
+                title: "Airport Transfer",
+            },
+            card3: {
+                img: "https://cdn-icons-png.flaticon.com/512/1076/1076731.png",
+                title: "Address Pickup",
+            },
+            card4: {
+                img: "https://cdn-icons-png.flaticon.com/512/2706/2706226.png",
+                title: "Taxi Tour",
+            },
+        },
+        places: {
+            img1: "img/places/kioskos.jpg",
+            img2: "img/places/carabali.jpg",
+            img3: "img/places/ferry.jpg",
+            img4: "img/places/parguera.jpg",
+            img5: "img/places/boqueron2.jpg",
+            img6: "img/places/festival.jpg",
+        },
+        about: {
+            //title: "ALEX TAXI",
+            info: " You can rely on us for every transportation need in & around Puerto Rico.",
+        },
+        footer: {
+
+        }
+    }
+    const nav = `
+        <nav class="nav-main">
+            <div  class="nav" id="nav" name="nav">
+                <img src="img/alex.png">
+                
+            </div>
+            
+        </nav>
+    `
+    const banner = `
+        <section class="banner-main">
+            <div  class="banner" id="banner" name="banner">
+                <div id="info"> 
+                    <h1>${data.banner.typeOfService}</h1>
+                    <h2>${data.banner.serviceInfo}</h2>
+                    <div class="phone-main">
+                        <div class="phone">
+                        <img src="icons/png/phone.png">
+                        <a id="phone" href="tel:+17874492978">787 449 2978</a>
+                    </div>
+                </div>
+                </div>
+                <img src=${data.banner.img}>
+            </div>
+        </section>
+    `
+
+    const services = `
+        <section class="services-main">
+            <h1>Our services</h1>
+            <p>Our company is one of the leading taxi service providers and leading choices when it comes to transportation.<br>
+                Give us a call and take advantage of our services today! </p>
+            <div class="services">
+                <div class ="card" id="card" name="card">
+                    <img src=${data.services.card1.img} >
+                    <h1>${data.services.card1.title}</h1>
+                </div>
+                <div class ="card" id="card" name="card">
+                    <img src=${data.services.card2.img} >
+                    <h1>${data.services.card2.title}</h1>
+                </div>
+                <div class ="card" id="card" name="card">
+                    <img src=${data.services.card3.img} >
+                    <h1>${data.services.card3.title}</h1>
+                </div>
+                <div class ="card" id="card" name="card">
+                    <img src=${data.services.card4.img} >
+                    <h1>${data.services.card4.title}</h1>
+                </div>
+                   
+            </div>
+        </section>
+    `
+    const places = `
+        <div class="places-main">
+            <h1>Places to visit</h1>
+            <div class="places">
+                <div class="places-card">
+                    <img src=${data.places.img1}>
+                    <p>Kioskos at Luquillo</p>
+                </div>
+                <div class="places-card">
+                    <img src=${data.places.img2}>
+                    <p>Hacienda Carabalí, Luquillo</p>
+                </div>
+                <div class="places-card">
+                    <img src=${data.places.img3}>
+                    <p>Ferry at Ceiba</p>
+                </div>
+                <div class="places-card">
+                    <img src=${data.places.img4}>
+                    <p>Parguera at Lajas</p>
+                </div>
+                <div class="places-card">
+                    <img src=${data.places.img5}>
+                    <p>Boquerón beaches</p>
+                </div>
+                <div class="places-card">
+                    <img src=${data.places.img6}>
+                    <p>Live events</p>
+                </div>
+            </div>
+        </div>  
+    `
+    const about = `
+        <section class="about-main">
+            <div class = "about-info" id="about" name="about">
+                
+                <p>${data.about.info}</p>
+            </div>
+            <div class="about-payment">
+                <h1>Different payment methods</h1>
+                <img src="./img/visa.png"/>
+            </div>
+        </section>
+    `
+    const footer = `
+        <footer class="footer-main">
+            <div class = "footer" id="footer" name="footer">
+                <img src="img/alex.png">
+                <p>787-449-2978</p>
+            </div>
+        </footer>
+    `
+
+
+    console.log(data);
+    document.write(`
+        ${nav}
+        ${banner}
+        ${services}
+        ${places}
+        ${about}
+        ${footer}
+ 
+    `);
+
+</script>
+
+<style>
+
+
+    body {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        margin: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+
+    .nav-main {
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        width: 100%;
+    }
+
+    .nav {
+        margin: 0px 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .nav img {
+        width: 150px;
+    }
+
+    .banner-main {
+        margin: 0px auto;
+        padding: 100px 0px;
+        width: 100%;
+
+    }
+
+    .banner {
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        width: 80%;
+        overflow: hidden;
+
+    }
+
+    #info {
+        margin-top: -25px;
+        text-align: left;
+        padding: 25px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        margin-top: 100px;
+
+    }
+
+    .banner h2 {
+        color: rgb(52, 52, 52);
+        margin: -20px 0px 0px 50px;
+  
+        ;
+    }
+
+    .banner img {
+        height: 350px;
+        margin-left: 50px;
+
+    }
+
+    .phone {
+        margin: 30px 0px;
+        margin-left:90px;
+    }
+
+    .phone img {
+        width: 30px;
+        height: 30px;
+        
+    }
+
+    #phone {
+        margin: auto 0px;
+        padding: 12px 12px;
+        font-size: 20px;
+        background-color: rgb(255, 196, 20);
+        color: white;
+        margin-left: 10px;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .services-main {
+        margin: 0px auto;
+        padding: 25px 0px;
+        width: 100%;
+        background-color: rgb(244, 244, 244);
+    }
+
+    .services-main h1 {
+        text-align: center;
+    }
+
+    .services-main p {
+        text-align: center;
+        width:500px;
+        margin:auto;
+    }
+
+    .services {
+        margin: 25px auto;
+        padding: 25px 25px;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services #card {
+        margin: 20px 20px;
+        ;
+        width: 200px;
+        padding: 25px;
+        display: block;
+        color: rgb(52, 52, 52);
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #card img {
+        width: 50px;
+        height: 50px;
+        margin-left: 10%;
+        opacity: 50%;
+    }
+
+    #card h1 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .about-main {
+        margin: 0px auto;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .places-main {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .places-main h1 {
+        text-align: center;
+    }
+
+    .places {
+        margin: 0px auto;
+        max-width:60%;
+        min-width:40%;
+        padding: 50px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .places-card {
+        border-bottom: solid rgb(231, 231, 231) 1px;
+        border-right: solid rgb(255, 255, 255) 5px;
+        border-radius: 15px;
+        width: 300px;
+        height: 250px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .places-card p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: normal;
+        font-size: 16px;
+        margin-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .places-card img {
+        margin: 0px;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        transition: 0.1s;
+    }
+
+    .about-main {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 25px;
+        width: 90%;
+    }
+
+    .about {
+        margin: 0px auto;
+        width: 50%;
+        color: rgb(52, 52, 52);
+      
+    }
+
+    .about-info {
+        width: 400px;
+        color: rgb(52, 52, 52);
+        font-size: large;
+        padding: 50px 0px;
+        background-color: rgb(255, 255, 255);
+        padding: 25px 25px;
+    }
+
+    .about-info h1 {
+        font-size: 20px;
+
+    }
+
+    .about-payment {
+        width: 400px;
+        color: rgb(87, 87, 87);
+    
+        padding: 25px 25px;
+    }
+
+    .about-payment h1 {
+        font-size: 17px;
+        text-align: center;
+
+    }
+
+    .about-payment img {
+        width: auto;
+        height: 60px;
+        display: block;
+        margin:-10px auto;
+        
+      
+    }
+
+    .footer-main {
+        background-color: rgb(241, 241, 241);
+        color: rgb(0, 0, 0);
+    }
+
+    .footer {
+        margin: 0px auto;
+        padding: 75px 0px;
+        display: block;
+    }
+
+    .footer img {
+        width: auto;
+        height: 60px;
+        margin: 0px auto;
+        display: block;
+        position: relative;
+    }
+
+    .footer p {
+        width: 100px;
+        margin: 0px auto 0px 50%;
+    }
+
+    @media only screen and (max-width: 800px) {
+
+        .banner-main {
+            margin: 0px auto;
+            padding: 100px 0px;
+        }
+
+        .banner {
+            margin: 0px auto;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            width: 90%;
+            overflow: hidden;
+
+        }
+
+        #info {
+            margin-top: -25px;
+
+        }
+
+        .banner h1 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            margin: 40px 0px 0px 5px;
+            padding: 0px;
+        }
+
+        .banner h2 {
+            color: rgb(52, 52, 52);
+            font-size: 18px;
+            margin: 20px;
+            margin-left:50px;
+        }
+
+        .banner img {
+            height: 300px;
+            margin-left: 100px;
+        }
+
+        .phone {
+            margin: 30px 5px;
+            margin-top: -10px;;
+        }
+
+        .phone img {
+            width: 30px;
+            height: 30px;
+            margin-left: 30%;
+            margin-top:20px;
+        }
+
+        #phone {
+        
+            padding: 12px 12px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .services-main {
+            margin: 0px auto;
+            padding: 25px 0px;
+            width: 90%;
+            background-color: rgb(244, 244, 244);
+        }
+
+        .services-main h1 {
+            text-align: center;
+            font-size: 20px;
+            ;
+        }
+
+        .services-main p {
+            text-align: center;
+            font-size: 14px;
+            width:250px;
+            margin:auto;
+        }
+
+        .services {
+            margin: 25px auto;
+            padding: 25px 25px;
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .services #card {
+            margin: 20px 20px;
+            width: 200px;
+            padding: 25px;
+            display: block;
+            color: rgb(52, 52, 52);
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #card img {
+            width: 50px;
+            height: 50px;
+            margin-left: 10%;
+            opacity: 50%;
+        }
+
+        #card h1 {
+            font-size: 18px;
+            padding-top: 5px;
+        }
+
+
+
+        .places-main {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .places-main h1 {
+            text-align: center;
+        }
+
+        .places {
+            margin: 0px auto;
+            width: 90%;
+            padding: 50px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .places-card {
+            border-bottom: solid rgb(231, 231, 231) 1px;
+            border-right: solid rgb(255, 255, 255) 5px;
+            border-radius: 15px;
+            ;
+            width: 300px;
+            height: 250px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            ;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .places-card p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: normal;
+            font-size: 16px;
+            ;
+            margin-left: 10px;
+            ;
+            padding-bottom: 10px;
+        }
+
+        .places-card img {
+            margin: 0px;
+
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            transition: 0.1s;
+        }
+
+        .about-main {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 80%;
+            ;
+
+        }
+
+
+
+        .about-info {
+
+            color: rgb(52, 52, 52);
+            font-size: 18px;
+            padding: 50px 0px;
+            background-color: rgb(255, 255, 255);
+
+
+        }
+
+        .about-info h1 {
+            font-size: 16px;
+        }
+
+        .about-payment {
+
+            color: rgb(87, 87, 87);
+            padding: 50px 0px;
+
+        }
+
+        .about-payment h1 {
+            font-size: 17px;
+        }
+
+        .about-payment img {
+            width: auto;
+            height: 60px;
+            margin-top: -20px;
+        }
+
+      
+
+        .footer {
+            margin: 0px auto;
+            padding: 75px 0px;
+            display: block;
+        }
+
+        .footer img {
+            width: auto;
+            height: 60px;
+            margin: 0px auto;
+            display: block;
+            position: relative;
+        }
+
+       
+
+    }
+</style>
